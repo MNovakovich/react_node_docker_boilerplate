@@ -1,0 +1,29 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "no-console": "off",
+        "semi": [2, "always"],
+        "prefer-const": ["error", {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+        }],
+        "no-useless-escape": 2,
+        "no-var": "error",
+        "space-in-parens": ["error", "never"],
+        "space-before-blocks":["error", { "functions": "always", "keywords": "always", "classes": "always" }]
+        
+        
+    }
+}

@@ -1,0 +1,18 @@
+.example {
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+    background:red;
+    background: linear-gradient(to bottom, white, black);
+}
+
+body {
+    background:purple;
+}
+#app {
+    padding:10px;
+    background-color: yellow;
+    border: 1px solid burlywood;
+}
+
+

@@ -1,0 +1,21 @@
+version: '3'
+services:
+    server:
+        build: ./server
+        ports:
+            - "8000:8001"
+        environment:
+            - NODE_ENV=development
+        volumes:
+            - ./server/src:/usr/app/src
+    client:
+        build: ./client
+        ports:
+            - "3001:3000"
+        volumes: 
+            - ./client/src:/usr/app/src
+            - ./client/dist:/usr/app/dist
+        depends_on:
+            - server
+       
+        

@@ -1,0 +1,10 @@
+
+$color : blue;
+body {
+    background-color: $color;
+  
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+}
+
